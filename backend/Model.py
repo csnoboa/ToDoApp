@@ -14,12 +14,12 @@ class User(db.Model):
     __tablename__ = 'users'
 
     id = db.Column(db.Integer(), primary_key=True)
-    username = db.Column(db.String(), unique=True)
-    firstname = db.Column(db.String())
-    lastname = db.Column(db.String())
-    password = db.Column(db.String())
-    emailadress = db.Column(db.String())
-    api_key = db.Column(db.String())
+    username = db.Column(db.String(250), unique=True)
+    firstname = db.Column(db.String(250))
+    lastname = db.Column(db.String(250))
+    password = db.Column(db.String(250))
+    emailadress = db.Column(db.String(250))
+    api_key = db.Column(db.String(250))
 
     def __init__(self, api_key, firstname, lastname, emailadress, password, username):
         self.api_key = api_key

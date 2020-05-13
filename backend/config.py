@@ -5,4 +5,4 @@ import os
 basedir = os.path.abspath(os.path.dirname(__file__))
 SQLALCHEMY_ECHO = False
 SQLALCHEMY_TRACK_MODIFICATIONS = True
-SQLALCHEMY_DATABASE_URI = "mysql://username:password@localhost/productivy_app"
+SQLALCHEMY_DATABASE_URI = "mysql://python:sdf56JKL!@localhost/productivy_app"
